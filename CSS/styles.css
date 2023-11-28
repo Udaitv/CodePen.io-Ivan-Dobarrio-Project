@@ -1,0 +1,304 @@
+/* Instruction to Import front from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+/*Instruction to set the variables that i am going to use in the project  */
+:root {
+  --black: #000000;
+  --offblack: #161616;
+  --darkest-gray: #36383f;
+  --dark-gray: #7b7e8b;
+  --light-gray: #b3b3b3;
+  --white: #ffffff;
+  --green: #4bce79;
+  --blue: #78daf6;
+  --yellow: #f4e187;
+  font-size: 10px;
+  --fuentedetexto: "Lato", sans-serif;
+}
+/*Instruction to aplly a margin of 0 and a padding of 0 to the body*/
+body {
+  margin: 0;/*Instruction to apply a margin of 0*/
+  padding: 0;/*Instruction to apply a padding of 0*/ 
+  background-color: #1a1919;/*This instruction is used to apply a background color made because it wont appear a white block in the footer*/
+}
+/*Beggining of the styles of the header*/
+header {
+  background: var(--black);/*Instruction to apply a background color using the var(--black)*/
+  display: flex;/*Instruction to apply Flexbox to the header*/
+  justify-content: space-between;/*Instruction to make that the elements will be distributed with space between*/
+  align-items: center;/*Instruction to make that the elements will be aligned in the center*/
+  padding:5px;/*Instruction to apply a padding of 5px*/
+}
+
+/*Beggining of the styles of the navegation bar*/
+
+/*Instruction of CSS that concerns to the selector that contains to all the elements of the div of the logo and the elements inside*/
+header > .logo-links {
+  display: flex; /*Flexbox*/
+  justify-content: space-around; /*Instruction to make that the elements are distributed with space around between them*/
+  align-items: center; /*Instruction to make that the elements are distributed in the center*/
+  margin: 1rem 0; /*Instruction to have a margin of 1rem on the top and bottom, and no margin on the left and right.*/
+}
+
+/*Instruction of CSS that concerns to the selector that contains the logo.*/
+header > .logo-links > .logo-container {
+  margin: 0 4rem 0 1rem; /* The instruction makes that the logo has a margin top and bottom of 0 and a margin right of 4 rem and 1 rem for the left*/
+}
+
+/*Instruction of CSS that concerns to the selector that contains all the elements of the navegation bar*/
+header > .logo-links > .navegation-bar {
+  display: flex; /*Flexbox*/
+  flex-direction: column; /*Instruction that make the elements to be pilen in the vertical side*/
+  justify-content: center; /*Instruction to make that the elements are centered*/
+  align-items: flex-start; /*Instruction to make that the elements will be aligned on the top of the container in the cross direction.*/
+}
+/*Instruction of CSS that concerns to the selector that contains the instructions refered to the text Explore*/
+header > .logo-links > .navegation-bar > .navegation-heading {
+  color: var(--yellow); /*Instruction to make the text yellow*/
+  text-transform: uppercase; /*Instruction to make the text in uppercase*/
+  font-family: var(--fuentedetexto);/*Instruction to apply the var that contains the font*/
+  font-size: 1.5rem;/*Instruction to apply the font size to 1.5rem*/
+}
+/*Instruction of CSS that concerns to the selector that contains the instruction that refers to the ul of the navegation bar*/
+header > .logo-links > .navegation-bar > .navbar-items {
+  display: flex;/*Instruction to apply the FlexBox*/
+  align-items: center;/*Instruction to make that the elements will be aligned in the center*/
+  font-size: 1.5rem;/*Instruction to apply the font size to 1.5 rem*/
+  margin: 0;/*Instruction to apply a margin of 0*/
+  padding: 0;/*Instruction to apply a padding of 0*/
+  font-family: var(--fuentedetexto);/*Instruction to apply the var that contains the font*/
+  font-size: 1.6rem;/*Instruction to apply the font size to 1.5rem*/
+}
+/*Instruction of CSS that concerns to the selector that contains the instruction to make the effect of hover*/
+header > .logo-links > .navegation-bar > .navbar-items > .navbar-item-element a:hover {
+  opacity: 0.5;/*Instruction to apply a opacity of 0.5*/
+}
+/**Instruction of CSS that concerns to the selector that apply some instructions to the elements of the class navbar-item-element*/
+header > .logo-links > .navegation-bar > .navbar-items > .navbar-item-element {
+  margin-right: 1rem;/*Instruction that apply a margin right of 1rem*/
+  font-weight: 900;/*Instruction to apply a font weight of 900*/
+  text-decoration: none;/*Instruction to make disappear the underline of the element a*/
+  display: flex;/*Instruction to apply a Flexbox*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element a of the class navbar-item-element*/
+header > .logo-links > .navegation-bar > .navbar-items > .navbar-item-element > a {
+  text-decoration: none;/*Instruction to make disappear the underline*/
+  color: white;/*Instruction to make the font white*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element a of the class navegation-link*/
+header > .logo-links > .navegation-bar > .navbar-items > .navegation-link > a {
+  color: var(--light-gray);/*Instruction to make the font light gray usin the var*/
+  font-weight: 700;/*Instruction to apply a font weight of 700*/
+  margin-left: 1.5rem;/*Instruction that apply a margin right of 1.5rem*/
+  position: relative;/*This instruction is used to position an element relative to its normal position*/
+  text-decoration: none;/*Instruction to make disappear the underline of the element a*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the class dropdown-content*/
+.dropdown-content {
+  display: none;/*Instruction to hide the dropdown*/
+  position: absolute;/*Instruction to make is used to position the dropdown content relative to its closest positioned ancestor.*/
+  top: 100%;/* Intruction that is used to position the top edge of the dropdown content element at a distance of 100% of its parent element's height. */
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element li*/
+.dropdown-content > li {
+  margin: 1rem;/*Instruction to apply a margin of 1rem*/
+  font-size: 1rem;/*Instruction to apply a font size of 1rem*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element i*/
+header > .logo-links > .navegation-bar > .navbar-items > .navbar-item-element > .dropdown-link i{
+  margin-left: 5px;/*Instruction to apply a margin left of 5px*/
+}
+
+/*Beggining of the styles of the buttons of the right side of the header*/
+
+/*Instruction of CSS that concerns to the selector that apply some instructions to the class navigation-buttons-wrapper */
+header > .navigation-buttons-wrapper {
+  display: flex;/*Instruction to use Flexbox*/
+  justify-content: space-around;/*Instruction to make that the elements will be space around*/
+  align-items: center;/*Instruction to make that the elements will be aligned in the center*/
+  margin: .5rem 0;/*Instruction that sets the top and bottom margin to .5rem and the left and right margin to 0.*/
+  gap: 8px;/*Instruction that sets the gap between flex items to 8px in a flex container.*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the class navigation-button*/
+header > .navigation-buttons-wrapper > .navigation-button {
+  color: var(--white);/*Instruction to apply a color of var(--white)*/
+  background-color: var(--darkest-gray);/*Instruction to apply a background color of var(--darkest-gray)*/
+  padding: 15px 20px;/*Instruction to apply a padding of 15px 20px*/
+  font-family: var(--fuentedetexto);/*Instruction to apply the var that contains the font*/
+  text-decoration:none;/*Instruction to make disappear the underline*/
+  font-weight: bold;/*Instruction to make the font bold*/
+  font-size: 1.9rem;/*Instruction to make the font size of 1.5rem*/
+  border-radius: 5px;/*Instruction to make a botton with the border radius of 5px*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element .navigation-buttons-wrapper a:hover when you put the mouse on it*/
+header > .navigation-buttons-wrapper a:hover {
+  background: var(--dark-gray);/*Instruction to apply a background color of var(--dark-gray)*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the class .chevron-down element i*/
+header > .navigation-buttons-wrapper > .chevron-down i {
+  color: var(--green);/*Instruction to apply a color of var(--green)*/
+  margin-left: 5px;/*Instruction to apply a margin left of 5px*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the class .magnifying-glass element i*/
+header > .navigation-buttons-wrapper > .magnifying-glass i {
+  background-color: transparent;/*Instruction to apply a background color of transparent*/
+  padding: 0.5rem;/*Instruction to apply a padding of 0.5rem*/ 
+  color: var(--dark-gray);/*Instruction to apply a color of var(--dark-gray)*/
+  font-size: 2rem;/*Instruction to apply a font size of 2rem*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element .magnifying-glass i:hover when you put the mouse on it*/
+header > .navigation-buttons-wrapper > .magnifying-glass i:hover {
+  background: transparent;/*Instruction to apply a background color of transparent*/
+  color: var(--light-gray);/*Instruction to apply a color of var(--light-gray)*/
+}
+/*Beggining of the styles of the main*/
+/* Selector to apply instructions on the main */
+main{
+  display: flex;/*Instruction to apply Flexbox*/
+  justify-content: space-between;/*Instruction to make that the elements will be space between*/
+  background-color: #42464F;/*Instruction to apply a background color of #42464F*/
+  background: -moz-radial-gradient(26% 0%, circle cover, #42464F 0, #000000 100%);/*Instruction to apply the shadow gradient in the Mozilla Web Browser */
+  background: -webkit-radial-gradient(26% 0%, circle cover, #42464F 0, #000000 100%);/* Instruction to apply the shadow gradient in the Chrome10+,Safari5.1+ Web Browser*/
+  background: -o-radial-gradient(26% 0%, circle cover, #42464F 0, #000000 100%);/* Instruction to apply the shadow gradient in the Opera 11.10+ Web Browser */
+  background: -ms-radial-gradient(26% 0%, circle cover, #42464F 0, #000000 100%);/* Instruction to apply the shadow gradient in the IE10+ Web Browser*/
+  background: radial-gradient(26% 0%, circle cover, #42464F 0, #000000 100%);/* Instruction to apply the shadow gradient */ 
+}
+/* Selector to apply instructions on the Wrapper */
+main > .Wrapper{
+  margin:3rem  0 0 3rem;/*Instruction to apply a margin of 3rem 0 0 3rem*/
+  font-family: var(--fuentedetexto);/*Instruction to apply the font saved in the var*/
+}
+/*Text Wrapper (Left Side)*/
+/* Selector to apply instructions on the Text Wrapper in the element p */
+main > .Text-Wrapper p{
+  font-size: 4rem;/*Instruction to apply a font size of 4 rem*/
+  font-weight: 300;/*Instruction to apply a font weight of 300*/
+  margin:1rem 2rem 1rem 0;/*Instruction to apply a margin of 1rem 2rem 1rem 0 */
+  color: var(--white);/*Instruction to apply the color using the var that contains the color */
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element p, and the selector  .Sign-Up-For-Free-buttonn and .Learn-More-buttonn */
+main > .Text-Wrapper p , .Sign-Up-For-Free-buttonn , .Learn-More-buttonn{
+  padding: 2.5rem;/*Instruction to apply a padding of 2.5 rem*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element p and b*/
+main > .Text-Wrapper p b{
+  font-weight: 700;/*Instruction to apply a font weight of 700*/
+}
+/*Selector to apply instruction to the class p:nth-child(2)*/
+main > .Text-Wrapper p:nth-child(2){
+  opacity: .7;/**/
+  font-size: 2rem; /**/
+  line-height: 3rem;/**/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element span*/
+main > .Text-Wrapper span{
+  font-size: 3rem;/*Instruction to apply a font size of 3 rem*/
+  color: var(--light-gray);/*Instruction to apply a color of var(--light-gray)*/
+}  
+/*Buttons*/
+main > .Text-Wrapper > .Sign-Up-For-Free-buttonn , .Learn-More-buttonn{
+  
+  border-radius: 5px;/*Instruction make the border radius of 5px*/
+  padding: 10px 20px;/*Instruction to apply a padding of 10px 20px*/
+  box-sizing: border-box;/*Instruction to make to control how it calculates the total width and height of an element*/
+  font-family: var(--fuentedetexto);/*Instruction to apply the font saved in the var*/
+  font-weight: 700;/*Instruction to apply a font weight of 700*/
+  font-size: 3.5rem;/*Instruction to apply a font size of 3.5 rem*/
+  align-items: center;/*Instruction to make that the elements are distributed in the center*/
+  margin:2.5rem;/*Instruction to apply a margin of 2.5rem*/
+ 
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element .Sign-Up-For-Free-buttonn*/
+main > .Text-Wrapper > .Sign-Up-For-Free-buttonn{
+  background-color: var(--green);/*Instruction to apply a background color of var(--green) to the button of Sign Up For Free*/
+  margin-right: 1.5rem ;/*Instruction to apply a margin right of 1.5rem*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element .Sign-Up-For-Free-buttonn element a*/
+main > .Text-Wrapper > .Sign-Up-For-Free-buttonn a {
+  text-decoration: none;/*Instruction to make disappear the underline*/
+  color: var(--black);/*Instruction to apply a color of var(--black)*/
+  font-family: var(--fuentedetexto);/*Instruction to apply the font saved in the var*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element .Sign-Up-For-Free-buttonn when you put the mouse on it*/
+main > .Text-Wrapper > .Sign-Up-For-Free-buttonn:hover{
+  filter: brightness(70%);/* Instruction to apply a filter of brightness of 70%*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element .Learn-More-buttonn*/
+main > .Text-Wrapper > .Learn-More-buttonn{
+  background-color: var(--black);/*Instruction to apply a background color of var(--black)*/ 
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element .Learn-More-buttonn element a*/
+main > .Text-Wrapper > .Learn-More-buttonn a {
+  text-decoration: none;/*Instruction to make disappear the underline*/
+  color: var(--white);/*Instruction to apply a color of var(--white)*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element .Learn-More-buttonn when you put the mouse on it*/
+main > .Text-Wrapper > .Learn-More-buttonn:hover{
+  background-color: var(--darkest-gray);/*Instruction to apply a background color of var(--darkest-gray)*/
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the element .Text-Wrapper*/
+main >.Text-Wrapper{
+  padding: 3rem;/*Instruction to apply a padding that gives a space between the content and the border of 3rem*/
+}
+/*IMAGE CONTAINER RIGHT SIDE*/
+main > .Central-Image{
+  display: flex;/*Instruction to apply Flexbox*/
+  flex-direction: column;/*Instruction to make that the elements are pilen in the vertical side*/
+  justify-content: flex-end;/*Instruction to align flex items along the main axis of a flex container.*/ 
+  width: 37%;/*Instruction to apply a width of 37%*/
+}
+main > .Central-Image h4{
+  font-family: var(--fuentedetexto);/*Instruction to apply the font saved in the var*/
+  margin:0 0 .5rem 1rem;/*Instruction to apply a margin of 0 0 .5rem 1rem*/
+  color:white;/*Instruction to apply a color white to the h4 element*/
+  margin-top: 8.5rem;/*Instruction to apply a margin top of 8.5rem*/
+  font-size: 2.5rem;/*Instruction to apply a font size of 2.5 rem*/
+}
+main > .Central-Image h4 span{
+  color: var(--blue);/*Instruction to apply a color of var(--blue)*/
+}
+main > .Central-Image img{
+  width: 100%;/*Instruction to apply a width of 100%*/
+  box-shadow: 0 15px 30px 5px var(--black);/*Instruction to apply a box shadow with the values 0 15px 30px 5px var(--black)*/
+}
+/*End of the styles of the main*/
+
+/* Beggining of the styles of the footer */
+footer {
+  bottom: 0;/*Instruction used ti specify the distance between the bottom edge of an absolutely positioned element and the bottom edge of its containing element.*/
+  width: 100%;/*Instruction to apply a width of 100%*/
+  text-align: center;/*Instruction to apply a align the text to the center*/
+  background-color: #1a1919;/*Instruction to apply a background color of #1a1919*/
+  display: block;/*Instruction*/
+  justify-content: center;/*Instruction to make that the elements will be centered*/
+  align-items: center;/*Instruction to make that the elements will be aligned in the center*/
+  font-family: var(--fuentedetexto);/*Instruction to apply the font saved in the var*/
+  padding-bottom: 5%;/*Instruction to apply a padding bottom of 5%*/
+  
+
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the class .Block-Link-Wrapper*/
+.Block-Link-Wrapper {
+  width: 100%;/*Instruction to apply a width of 100%*/
+  height: 100%;/*Instruction to apply a height of 100%*/
+  display: flex;/*Instruction to apply a Flexbox*/
+  margin-bottom: 5%;/*Instruction to apply a margin bottom of 5%*/
+  
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the class .Block-Link-Wrapper and the sub class .Block-Link*/
+.Block-Link-Wrapper > .Block-Link {
+  flex: 1;/*Instruction to apply a flex of 1*/
+  padding: 1em;/*Instruction to apply a padding of 1em*/
+  border: 1px solid #808080;/*Instruction to apply a border of 1px solid #808080*/
+  text-align: center;/*Instruction to apply a text align of center*/
+  color: white;/*Instruction to apply a color of white*/
+  font-size: 2rem;/*Instruction to apply a font size of 2rem*/
+  
+}
+/*Instruction of CSS that concerns to the selector that apply some instructions to the subclass Block-Link and the element span */
+.Block-Link-Wrapper > .Block-Link span {
+  text-decoration: none;/*Instruction to make disappear the underline*/
+  -webkit-text-stroke-width: 1.5px;/*Instruction to apply a -webkit-text-stroke-width of 1.5px*/
+  -webkit-text-stroke-color: white;/*Instruction to apply a -webkit-text-stroke-color of white to the previous instruction*/
+  color: white;/*Instruction to apply a color of white*/
+}
+/* End of the styles of the footer */
